@@ -1,6 +1,7 @@
 "use client";
 
 import NameInput from "./components/NameInput";
+import WelcomeBox from "./components/WelcomeBox";
 import { useState } from "react";
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
       }));
     }
   }
-  console.log(userInput.isTyped);
+
   return (
     <>
       {!userInput.isTyped && (
@@ -36,7 +37,7 @@ export default function Home() {
       )}
 
       {userInput.isTyped && userInput.name.length > 1 && (
-        <p>Hello, {userInput.name}</p>
+        <WelcomeBox userInput={userInput} />
       )}
     </>
   );
