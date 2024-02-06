@@ -2,6 +2,7 @@
 
 import NameInput from "./components/NameInput";
 import WelcomeBox from "./components/WelcomeBox";
+import ListTable from "./components/List";
 import { useState } from "react";
 
 export default function Home() {
@@ -37,7 +38,10 @@ export default function Home() {
       )}
 
       {userInput.isTyped && userInput.name.length > 1 && (
-        <WelcomeBox userInput={userInput} />
+        <>
+          <WelcomeBox userInput={userInput} />
+          <ListTable />
+        </>
       )}
     </>
   );

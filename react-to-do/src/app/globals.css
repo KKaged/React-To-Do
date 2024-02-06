@@ -19,9 +19,11 @@
 body {
   background-color: #80A15A;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem;
+  gap: 2rem;
 }
 
 @layer utilities {
