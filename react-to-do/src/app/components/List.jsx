@@ -78,7 +78,7 @@ export default function ListTable() {
           <tbody>
             {tasks.map((task, index) => (
               <tr key={index}>
-                <td className=" flex text-left font-light gap-5 text-xl mx-3">
+                <td className=" flex justify-between text-left font-light gap-5 text-xl mx-3">
                   <input
                     type="checkbox"
                     className="accent-green-900 "

@@ -43,6 +43,7 @@ export default function Home() {
           <ListTable />
         </>
       )}
+      <footer>Made by Daniel Leon</footer>
     </>
   );
 }
